@@ -1,0 +1,23 @@
+encoder:
+  _target_: mvae_ad.architectures.Encoder3d
+  latent_dim: ??
+  n_blocks: 5
+  n_subblocks: 1
+  activation: silu
+  block: conv
+  cond_mod_network: ??
+  joint_network: ??
+
+decoder:
+  _target_: mvae_ad.architectures.Decoder3d
+  latent_dim: ??
+  cond_mod_network: ??
+  n_blocks: 5
+  n_subblocks: 1
+  activation: silu
+  block: conv
+  last_conv: True
+  merge_method: concat
+  output_decoder_actv: identity
+
+latent_dim: 64

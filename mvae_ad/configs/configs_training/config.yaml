@@ -1,0 +1,25 @@
+defaults:
+  - _self_
+  - data: pet_adni
+  - architecture: ${data/extraction}_conv
+  - trainer: base
+  - model: cvae
+  - paths: local_MS
+  - eval: base
+
+hydra:
+  run:
+    dir: outputs/${hydra.job.name}/${now:%Y-%m-%d_%H-%M-%S}
+  verbose: true
+
+  ### basic sweep folder organisation
+  # sweep:
+  #   dir: multirun/${now:%Y-%m-%d_%H-%M-%S}
+  #   subdir: beta_${model.config.beta}/latent_dim_${architecture.latent_dim}/split_${data.split}/seed_${seed}
+
+seed: 0
+batch_size: 4
+logger: tensorboard
+evaluation_for_all_windows: false
+seed_equal_to_split: false
+

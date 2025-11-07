@@ -1,0 +1,25 @@
+config:
+  _target_: mvae_ad.trainers.CapsTrainerConfig
+  num_epochs: 100
+  per_device_train_batch_size: ??
+  per_device_eval_batch_size: ??
+  learning_rate: 1e-4
+  seed: ${seed}
+  steps_predict: 5
+  scheduler_cls: ReduceLROnPlateau
+  scheduler_params:
+    factor: 0.5
+    patience: 15
+  optimizer_cls: Adam
+  optimizer_params:
+    weight_decay: 0.4
+  gradient_clipping_max_norm: null
+  start_keep_best_epoch: 31
+  save_nifty_reconstruction: false
+  beta_schedule_fct: frange
+  beta_schedule_params:
+    n_cycle: 4
+    ratio: 0.5
+    min_beta: 0.0
+    n_augment: 30 # for single_frange_scheduler
+  start_lr_scheduler_epoch: 31

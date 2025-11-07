@@ -1,0 +1,4 @@
+_target_: mvae_ad.data.utils.get_encoding_fct_age
+args:
+  name: one_hot
+  dim: 10

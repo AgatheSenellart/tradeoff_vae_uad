@@ -1,0 +1,3 @@
+_target_: mvae_ad.data.utils.get_encoding_fct_sex
+args: 
+  name: one_hot

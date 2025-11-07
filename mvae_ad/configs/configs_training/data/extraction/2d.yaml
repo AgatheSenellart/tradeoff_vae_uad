@@ -1,0 +1,7 @@
+dim: [1, 169, 208]
+name: slice
+
+extraction:
+  _target_: clinicadl.transforms.extraction.Slice
+  slices: [80]
+  slice_direction: 2

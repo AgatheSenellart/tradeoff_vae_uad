@@ -1,0 +1,3 @@
+simulated_datasets: ['val_AD_30', 'val_AD_50', 'test_AD_30', 'test_AD_50']
+test_datasets: ['test_ad_baseline', 'test_cn_baseline']
+save_stats: true

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mvae_ad"
+version = "0.1"
+dependencies = [
+   "clinicadl==2.0.0rc2",
+        "umap-learn",
+        "hydra-core",
+]
+requires-python = ">=3.10"
+authors = [
+  {name = "Agathe Senellart", email = "agathe.senellart@inria.fr"},
+  {name = "Maelys Solal", email = "maelys.solal@icm-institute.org"},
+]

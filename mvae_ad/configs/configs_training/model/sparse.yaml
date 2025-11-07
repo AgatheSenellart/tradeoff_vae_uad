@@ -1,0 +1,33 @@
+config:
+  _target_: multivae.models.CVAEConfig
+  conditioning_modalities: ['age', 'sex']
+  main_modality: pet_linear
+  latent_dim: ??
+  decoder_dist: normal
+  beta: 1.0 # This is set to 1.0 for the sparseVAE
+  sigma_variation: null
+  sparse: True # SET TO TRUE
+  log_sigma_init: -2.0
+  log_alpha_init: -3.0 # Default value
+  mean_over_batch: False
+
+name: cvae
+
+load_from_folder:
+  _target_: multivae.models.AutoModel.load_from_folder
+
+cond_in_encoder:
+  use: False
+  hidden_dims: [128]
+  joint_layers: [128]
+  activation: relu
+
+cond_in_decoder:
+  use: False
+  hidden_dims: [256,32]
+  activation: relu
+
+cond_in_prior:
+  use: False
+  hidden_dims: [256]
+  activation: relu

@@ -1,0 +1,12 @@
+defaults:
+  - extraction: 3d
+  - hypo_simulation: default
+  - preprocessing: coregiso
+  - normalization: default
+  - txt_modalities_transforms/age: sinusoidal
+  - txt_modalities_transforms/sex: one_hot
+
+split: 0
+use_only_baseline: false
+
+txt_modalities: [age, sex]

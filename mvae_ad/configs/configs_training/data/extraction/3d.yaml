@@ -1,0 +1,5 @@
+dim: [1, 169, 208, 179]
+name: 3d
+
+extraction:
+  _target_: clinicadl.transforms.extraction.Image

@@ -1,0 +1,7 @@
+shared_dir: /Users/maelys.solal/Documents
+mvae_ad_dir: ${.shared_dir}/projects/colab_anomaly_detection/mvae_ad
+
+caps_directory: ${.shared_dir}/datasets/adni/caps/caps_merge
+mask_directory: ${.shared_dir}/datasets/masks
+split_directory: ${.shared_dir}/datasets/adni/splits/micro-splits
+logging_directory: ${.mvae_ad_dir}/outputs/mlruns

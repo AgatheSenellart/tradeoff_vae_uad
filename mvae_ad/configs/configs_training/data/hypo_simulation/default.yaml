@@ -1,0 +1,4 @@
+_target_: mvae_ad.data.transforms.SimulateHypometabolic
+mask_dir: ${...paths.mask_directory}
+pathology: ??
+percentage: ??

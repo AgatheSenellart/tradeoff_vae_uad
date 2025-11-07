@@ -1,0 +1,5 @@
+shared_dir: /home/asenella/UAD/shared_dir
+caps_directory: ${.shared_dir}/datasets/adni/caps/caps_pet_uniform_v2025
+mask_directory: ${.shared_dir}/datasets/adni/caps/caps_pet_uniform_v2025/masks
+split_directory: ${.shared_dir}/datasets/adni/caps/caps_pet_uniform_v2025/splits_dsb
+logging_directory: ${.shared_dir}/mlruns

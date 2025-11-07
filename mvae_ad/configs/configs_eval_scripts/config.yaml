@@ -1,0 +1,9 @@
+defaults:
+  - _self_
+
+main_path: ??
+split: 0
+seed: 0
+hydra_path: ${main_path}/split_${split}/seed_${seed}
+checkpoint_window: null
+

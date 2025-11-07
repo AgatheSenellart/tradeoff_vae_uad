@@ -1,0 +1,5 @@
+_target_: clinicadl.data.datatypes.PETLinear
+reconstruction: coregiso
+tracer: "18FFDG"
+suvr_reference_region: cerebellumPons2
+use_skull_stripped: False

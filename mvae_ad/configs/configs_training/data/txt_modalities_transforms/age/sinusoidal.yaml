@@ -1,0 +1,5 @@
+_target_: mvae_ad.data.utils.get_encoding_fct_age
+args:
+  name: sinusoidal
+  dim: 256
+  theta: 10000
